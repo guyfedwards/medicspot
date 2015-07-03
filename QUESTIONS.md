@@ -43,7 +43,7 @@ Qs4: Explain the output of the following code and why
     var bar = foo(1);
     console.log(bar(2))
 
-Qs4: Explain how you think you'd use the following function
+Qs5: Explain how you think you'd use the following function
 
     function double(a, done) {
       setTimeout(function() {

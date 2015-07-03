@@ -37,7 +37,9 @@ We suggest using <http://knexjs.org> for this, mainly because its super simple t
 The data source is available in this repo in the [./data](data/) directory. The [readme](data/readme.txt) in that directory explains how to use the data.
 
 
-# Bonus points
+# Rules
+All work should be commited into a fork of this repo. Please note you won't have permission to push to this repo directly (see <https://help.github.com/articles/fork-a-repo> for help)
+
 You'll get bonus points if you
 
  * Unit test your code

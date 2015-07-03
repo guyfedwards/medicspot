@@ -1,6 +1,8 @@
 # Questions
 Some hopefully simple questions for candidates to answer
 
+**NOTE:** For any candiates finding this file, please ignore
+
 Send the below via email to the candidate
 
 ---
@@ -29,5 +31,23 @@ Qs3: Explain the potential issue with the following code (hint: `5` is supposed 
     function foo(d) {
       d = d || 5;
       console.log(d);
+    }
+
+Qs4: Explain the output of the following code and why
+
+    function foo(a) {
+      return function(b) {
+        return a + b;
+      }
+    }
+    var bar = foo(1);
+    console.log(bar(2))
+
+Qs4: Explain how you think you'd use the following function
+
+    function double(a, done) {
+      setTimeout(function() {
+        done(a * 2);
+      }, 100);
     }
 

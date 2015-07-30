@@ -1,11 +1,5 @@
 # Questions
-Some hopefully simple questions for candidates to answer
 
-**NOTE:** For any candiates finding this file, please ignore
-
-Send the below via email to the candidate
-
----
 
 Qs1: Explain the output of the following code and why
 

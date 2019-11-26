@@ -20,7 +20,7 @@ Qs2: Explain the output of the following code and why
     foo(0);
 
 
-Qs3: Explain the potential issue with the following code (hint: `5` is supposed to be the default value if no default is provided)
+Qs3: If nothing is provided to `foo` we want the default response to be `5`. Explain the potential issue with the following code:
 
     function foo(d) {
       d = d || 5;
@@ -37,7 +37,7 @@ Qs4: Explain the output of the following code and why
     var bar = foo(1);
     console.log(bar(2))
 
-Qs5: Explain how you think you'd use the following function
+Qs5: Explain how the following function would be used
 
     function double(a, done) {
       setTimeout(function() {

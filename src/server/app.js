@@ -1,7 +1,10 @@
+const path = require('path')
 const express = require('express')
 
 function createApp (db) {
   const app = express()
+
+  app.use(express.static('public'))
 
   app.get('/locations', async (req, res) => {
     const { q: queryString } = req.query

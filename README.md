@@ -1,5 +1,30 @@
 # Node code challenge
 
+### New Readme
+##### Answers
+Answers to the questions can be found in `./answers.md`.  
+
+##### Running the app
+You can run the app with `yarn start`. The app will the be served at `localhost:8080`.
+
+##### Scripts
+There are several `yarn` scripts for running the server, tests and ui
+```
+buildui - builds new ui 
+dev     - runs the server in dev mode with nodemon
+start   - runs the server with NODE_ENV=production set
+startui - starts ui server. Looks for api on port 8080
+test    - runs the tests
+```
+
+##### Improvements
+- More comprehensive tests
+- Proper error handling middleware
+- Docker setup
+- Better styling on the UI
+- Usually I wouldn't include `public` in the git repo but for ease of use I have included it
+
+### Original
 This challenge has three parts:
 
 1. Written answers to [Questions](./QUESTIONS.md)

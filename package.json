@@ -5,9 +5,11 @@
   "private": true,
   "main": "index.js",
   "scripts": {
+    "buildui": "parcel build -d public src/client/index.html ",
     "dev": "nodemon index.js",
-    "start": "node index.js",
-    "test": "PORT=3333 jest"
+    "start": "NODE_ENV=production node index.js",
+    "startui": "API_URL=localhost:8080 parcel -d public src/client/index.html",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,18 +22,35 @@
   },
   "homepage": "https://gitlab.com/medicspot/node-code-challenge#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "sqlite": "^3.0.3"
+    "express": "5.0.0-alpha.7",
+    "grommet": "^2.11.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "sqlite": "^3.0.3",
+    "styled-components": "^5.0.1"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.8.6",
+    "@babel/preset-react": "^7.8.3",
+    "@testing-library/jest-dom": "^5.1.1",
+    "@testing-library/react": "^9.4.1",
+    "babel-jest": "^25.1.0",
     "jest": "^25.1.0",
     "nodemon": "^2.0.2",
+    "parcel-bundler": "^1.12.4",
+    "react-test-renderer": "^16.13.0",
     "standard": "^14.3.1",
     "supertest": "^4.0.2"
   },
   "standard": {
     "env": [
       "jest"
+    ],
+    "globals": [
+      "fetch"
     ]
-  }
+  },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ]
 }
